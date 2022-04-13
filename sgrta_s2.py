@@ -121,11 +121,11 @@ for j in range(0,2):
 
         # VELOCIDAD  
 
-        Vx1[i] = (Vx1[i-1]+Ax1[i-1]*dt)
-        Vy1[i] = (Vy1[i-1]+Ay1[i-1]*dt)
+        Vx1[i] = (Vx1[i-1]+Ax1[i]*dt)
+        Vy1[i] = (Vy1[i-1]+Ay1[i]*dt)
 
-        Vx2[i] = (Vx2[i-1]+Ax2[i-1]*dt)
-        Vy2[i] = (Vy2[i-1]+Ay2[i-1]*dt)
+        Vx2[i] = (Vx2[i-1]+Ax2[i]*dt)
+        Vy2[i] = (Vy2[i-1]+Ay2[i]*dt)
       
       else: #EULER NORMAL J = 1
 
@@ -150,11 +150,11 @@ for j in range(0,2):
 
        # VELOCIDAD 
 
-        VEx1[i] = (VEx1[i-1]+AEx1[i]*dt)
-        VEy1[i] = (VEy1[i-1]+AEy1[i]*dt)
+        VEx1[i] = (VEx1[i-1]+AEx1[i-1]*dt)
+        VEy1[i] = (VEy1[i-1]+AEy1[i-1]*dt)
 
-        VEx2[i] = (VEx2[i-1]+AEx2[i]*dt)
-        VEy2[i] = (VEy2[i-1]+AEy2[i]*dt)
+        VEx2[i] = (VEx2[i-1]+AEx2[i-1]*dt)
+        VEy2[i] = (VEy2[i-1]+AEy2[i-1]*dt)
 
     else:
       
@@ -253,8 +253,8 @@ fig.set_size_inches(22,12)
 ax1.set_title(" Órbitas dos cuerpos AB4(EulerCromer)",fontsize=14)
 ax1.plot(X1-Xcm,Y1-Ycm,'o', label="cuerpo 1",c = "darkblue")
 ax1.plot(X2-Xcm,Y2-Ycm,'', label="cuerpo 2",c = "red")
-ax1.set_xlabel("x",fontsize=14)
-ax1.set_ylabel("y",fontsize=14)
+ax1.set_xlabel("x (UA)",fontsize=14)
+ax1.set_ylabel("y (UA)",fontsize=14)
 
 ax2.set_title("Órbitas dos cuerpos AB4(Euler)",fontsize=14)
 ax2.plot(XE1-XEcm,YE1-YEcm,'o', label="cuerpo 1",c = "darkblue")
@@ -327,11 +327,11 @@ for j in range(0,2):
 
         # VELOCIDAD  
 
-        Vx1[i] = (Vx1[i-1]+Ax1[i-1]*dt)
-        Vy1[i] = (Vy1[i-1]+Ay1[i-1]*dt)
+        Vx1[i] = (Vx1[i-1]+Ax1[i]*dt)
+        Vy1[i] = (Vy1[i-1]+Ay1[i]*dt)
 
-        Vx2[i] = (Vx2[i-1]+Ax2[i-1]*dt)
-        Vy2[i] = (Vy2[i-1]+Ay2[i-1]*dt)
+        Vx2[i] = (Vx2[i-1]+Ax2[i]*dt)
+        Vy2[i] = (Vy2[i-1]+Ay2[i]*dt)
       
       else: #EULER NORMAL J = 1
 
@@ -356,11 +356,11 @@ for j in range(0,2):
 
        # VELOCIDAD 
 
-        VEx1[i] = (VEx1[i-1]+AEx1[i]*dt)
-        VEy1[i] = (VEy1[i-1]+AEy1[i]*dt)
+        VEx1[i] = (VEx1[i-1]+AEx1[i-1]*dt)
+        VEy1[i] = (VEy1[i-1]+AEy1[i-1]*dt)
 
-        VEx2[i] = (VEx2[i-1]+AEx2[i]*dt)
-        VEy2[i] = (VEy2[i-1]+AEy2[i]*dt)
+        VEx2[i] = (VEx2[i-1]+AEx2[i-1]*dt)
+        VEy2[i] = (VEy2[i-1]+AEy2[i-1]*dt)
 
 for i in range(0,k):
 
