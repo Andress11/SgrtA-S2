@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1r_3iXt5E4IfWveW_3AVPxKlb5cBBKe6y
 """
 
-!pip install lsq-ellipse==2.0.1
+#!pip install lsq-ellipse==2.0.1
 
 import numpy as np
 from ellipse import LsqEllipse
@@ -51,3 +51,5 @@ plt.colorbar(sc)
 plt.errorbar(X,Y,xerr=dX,yerr=dY, linestyle="None")
 plt.xlabel("x (arcsec)")
 plt.ylabel("y (arcsec)")
+plt.show()
+
